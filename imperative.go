@@ -3,7 +3,7 @@ import "fmt"
 
 type Car struct {
 	Model string
-	Manufactures string
+	Manufacturer string
 	BuildYear int
 }
 type Cars []*Car
@@ -19,7 +19,7 @@ func main(){
 	var selectedCars Cars
 
 	for _,item := range AllCars{
-		if item.Manufactures == targetManufacturer {
+		if item.Manufacturer == targetManufacturer {
 			selectedCars = append(selectedCars,item)
 		}
 	}
