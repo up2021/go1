@@ -17,5 +17,5 @@ func (cs Cars) findAll (selector func(* Car) bool) Cars{
 }
 func functional(){
 	selectedCars := AllCars.findAll(func(c* Car) bool{return c.Manufactures == targetManufacturer})
-	fmt.Printf("select %v cars of %v \n", len(selectedCars), targetManufacturer)
+	fmt.Printf("select %v cars of %v using functional coding函数式编程 \n ", len(selectedCars), targetManufacturer)
 }

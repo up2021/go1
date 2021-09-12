@@ -23,6 +23,6 @@ func main(){
 			selectedCars = append(selectedCars,item)
 		}
 	}
-	fmt.Printf("select %v cars of %v \n", len(selectedCars), targetManufacturer)
+	fmt.Printf("select %v cars of %v using imperative coding命令式编程 \n", len(selectedCars), targetManufacturer)
 	functional()
 }
